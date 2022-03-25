@@ -37,7 +37,8 @@ class RKNN_config_container:
             # project_config = yaml.load(f)
             project_config = yaml.safe_load(f)
         self.project_config = project_config
-        self.RK_device_platform = project_config.get('RK_device_platform', 'RK1808').upper()
+#         self.RK_device_platform = project_config.get('RK_device_platform', 'RK1808').upper()#The RK3399pro device cannot be selected properly
+        self.RK_device_platform = project_config.get('RK_device_platform', 'RK1808')#.upper() 
 
     def parse_hyper_config(self):
         # config not exists in rknn_api
