@@ -1,9 +1,9 @@
 <!--- SPDX-License-Identifier: Apache-2.0 -->
 # 个人修改部分
 <b>修改了rknn_model_zoo/common/rknn_converter/config_parser.py文件中 40 行,否则RK3399pro 将在代码中不能通过</b>
-  '''bash
-  self.RK_device_platform = project_config.get('RK_device_platform', 'RK1808')#.upper() 
-  '''
+      ```
+     self.RK_device_platform = project_config.get('RK_device_platform', 'RK1808')#.upper() 
+     ```
 # RKNN模型库
 ​	Rockchip Neural Network(RKNN)是瑞芯微为了加速模型推理而基于自身NPU硬件架构定义的一套模型格式.使用该格式定义的模型在Rockchip NPU上可以获得远高于CPU/GPU的性能.  
 ​	RKNN Model Zoo是由像您这样的社区成员贡献的覆盖不同任务,不同框架的SOTA模型的集合.它涵盖了模型转换,模型评估和模型部署等基于Rockchip NPU的完整AI应用开发流程. 每个模型都包含**模型转换,模型评估,模型部署**相关的脚本,如果有对模型原始工程调整的,还会提供相应的脚本或补丁.  
